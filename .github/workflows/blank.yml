@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Downloading Ngrok.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/AKRAMHL2/AH8RDP/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/AKRAMHL2/AH8RDP/blob/main/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/AKRAMHL2/AH8RDP/main/start.bat -OutFile start.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
